@@ -203,6 +203,9 @@ vim_plugin_task "janus_themes" do
   end
 end
 
+vim_plugin_task "blackboard" do
+  sh "curl -o colors/blackboard.vim https://github.com/nelstrom/vim-blackboard/raw/master/colors/blackboard.vim"
+end
 vim_plugin_task "molokai" do
   sh "curl https://github.com/mrtazz/molokai.vim/raw/master/colors/molokai.vim > colors/molokai.vim"
 end
