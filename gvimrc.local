@@ -1,0 +1,9 @@
+set guifont=Monaco:h12
+color blackboard
+
+" CapsLock/Help -> ESC
+" http://stackoverflow.com/questions/127591/using-caps-lock-as-esc-on-a-mac
+" http://hints.macworld.com/article.php?story=20060825072451882
+map  <Help> <Esc>
+map! <Help> <Esc>
+
