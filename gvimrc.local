@@ -1,3 +1,8 @@
+" remove scrollbars
+set guioptions-=L
+set guioptions-=r
+
+" font and color scheme
 set guifont=Monaco:h12
 color blackboard
 
