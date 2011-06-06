@@ -1,5 +1,7 @@
 color blackboard
 
+" Ruby
+imap <c-l> <space>=><space>
 
 " Rails
 nmap , a<%=  %><Esc>hhi
