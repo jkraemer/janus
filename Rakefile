@@ -129,7 +129,7 @@ vim_plugin_task "color-sampler",    "git://github.com/vim-scripts/Color-Sampler-
 vim_plugin_task "conque",           "http://conque.googlecode.com/files/conque_1.1.tar.gz"
 vim_plugin_task "fugitive",         "git://github.com/tpope/vim-fugitive.git"
 vim_plugin_task "git",              "git://github.com/tpope/vim-git.git"
-vim_plugin_task "haml",             "git://github.com/tpope/vim-haml.git"
+# vim_plugin_task "haml",             "git://github.com/tpope/vim-haml.git"
 vim_plugin_task "indent_object",    "git://github.com/michaeljsmith/vim-indent-object.git"
 vim_plugin_task "javascript",       "git://github.com/pangloss/vim-javascript.git"
 vim_plugin_task "jslint",           "git://github.com/hallettj/jslint.vim.git"
@@ -140,10 +140,10 @@ vim_plugin_task "taglist",          "git://github.com/vim-scripts/taglist.vim.gi
 vim_plugin_task "vividchalk",       "git://github.com/tpope/vim-vividchalk.git"
 vim_plugin_task "solarized",        "git://github.com/altercation/vim-colors-solarized.git"
 vim_plugin_task "supertab",         "git://github.com/ervandew/supertab.git"
-vim_plugin_task "cucumber",         "git://github.com/tpope/vim-cucumber.git"
+#vim_plugin_task "cucumber",         "git://github.com/tpope/vim-cucumber.git"
 vim_plugin_task "textile",          "git://github.com/timcharper/textile.vim.git"
 vim_plugin_task "rails",            "git://github.com/tpope/vim-rails.git"
-vim_plugin_task "rspec",            "git://github.com/taq/vim-rspec.git"
+#vim_plugin_task "rspec",            "git://github.com/taq/vim-rspec.git"
 vim_plugin_task "zoomwin",          "git://github.com/vim-scripts/ZoomWin.git"
 vim_plugin_task "snipmate",         "git://github.com/msanders/snipmate.vim.git"
 vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
@@ -157,6 +157,7 @@ vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
 vim_plugin_task "puppet",           "git://github.com/ajf/puppet-vim.git"
 vim_plugin_task "scala",            "git://github.com/bdd/vim-scala.git"
 vim_plugin_task "gist-vim",         "git://github.com/mattn/gist-vim.git"
+vim_plugin_task "ragtag",           "git://github.com/tpope/vim-ragtag.git"
 
 #vim_plugin_task "hammer",           "git://github.com/robgleeson/hammer.vim.git" do
 #  sh "gem install github-markup redcarpet"
@@ -204,7 +205,7 @@ vim_plugin_task "janus_themes" do
 end
 
 vim_plugin_task "blackboard" do
-  sh "curl -o colors/blackboard.vim https://github.com/nelstrom/vim-blackboard/raw/master/colors/blackboard.vim"
+  sh "curl -o colors/blackboard.vim https://raw.github.com/nelstrom/vim-blackboard/master/colors/blackboard.vim"
 end
 vim_plugin_task "molokai" do
   sh "curl https://github.com/mrtazz/molokai.vim/raw/master/colors/molokai.vim > colors/molokai.vim"
@@ -215,11 +216,11 @@ vim_plugin_task "mustache" do
     file << "au BufNewFile,BufRead *.mustache        setf mustache"
   end
 end
-vim_plugin_task "arduino","git://github.com/vim-scripts/Arduino-syntax-file.git" do
-  File.open(File.expand_path('../ftdetect/arduino.vim', __FILE__), 'w') do |file|
-    file << "au BufNewFile,BufRead *.pde             setf arduino"
-  end
-end
+# vim_plugin_task "arduino","git://github.com/vim-scripts/Arduino-syntax-file.git" do
+#   File.open(File.expand_path('../ftdetect/arduino.vim', __FILE__), 'w') do |file|
+#     file << "au BufNewFile,BufRead *.pde             setf arduino"
+#   end
+# end
 vim_plugin_task "vwilight" do
   sh "curl https://gist.github.com/raw/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087/vwilight.vim > colors/vwilight.vim"
 end
