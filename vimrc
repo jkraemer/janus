@@ -33,6 +33,13 @@ set laststatus=2
 " This is likely a bludgeon to solve some other issue, but it works
 set noequalalways
 
+" option-s for save
+map ß :w<CR>
+imap ß <Esc>ßi
+" shift-option-s for save all
+map Í :wa<CR>
+imap Í <Esc>Íi
+
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
@@ -144,6 +151,6 @@ runtime! macros/matchit.vim
 set showcmd
 
 " Include user's local vim config
-if filereadable(expand("~/.vimrc.local"))
+"if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
-endif
+"endif

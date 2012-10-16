@@ -1,4 +1,7 @@
-color blackboard
+set t_Co=256
+"color railscasts+
+color vibrantink
+set background=dark
 
 set wrap
 
@@ -25,7 +28,7 @@ nmap <silent> <C-N> :silent noh<CR>
 map! <C-F> <Esc>gUiw`]a
 
 " have fifty lines of command-line (etc) history:
-set history=50
+set history=100
 " remember all of these between sessions, but only 10 search terms; also 
 " remember info for 10 files, but never any on removable disks, don't remember
 " marks in files, don't rehighlight old search patterns, and only save up to
@@ -57,12 +60,12 @@ set textwidth=79
 :inoremap {<CR>  {<CR>}<Esc>O
 :inoremap {{     {
 :inoremap {}     {}
-                                                                                                                            
+
 :inoremap [      []<Left>
 :inoremap [<CR>  [<CR>]<Esc>O
 :inoremap [[     [
 :inoremap []     []
-                                                                                                                            
+
 :inoremap (      ()<Left>
 :inoremap (<CR>  (<CR>)<Esc>O
 :inoremap ((     (
@@ -274,9 +277,9 @@ noremap Y y$
 " have \tp ("toggle paste") toggle paste on/off and report the change, and
 " where possible also have <F4> do this both in normal and insert mode:
 nnoremap \tp :set invpaste paste?<CR>
-nmap <F4> \tp
-imap <F4> <C-O>\tp
-set pastetoggle=<F4>
+nmap <F2> \tp
+imap <F2> <C-O>\tp
+set pastetoggle=<F2>
 
 " have \tf ("toggle format") toggle the automatic insertion of line breaks
 " during typing and report the change:
@@ -689,5 +692,5 @@ endfunc
 
 cno $c e <C-\>eCurrentFileDir()<cr>
 cmap <C-x> <C-\>eDeleteTillSlash()<CR>
-                   
+
 
